@@ -1,0 +1,14 @@
+{
+  "name": "characters",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.6.6",
+    "express": "^4.17.1",
+    "sequelize": "^6.12.0",
+    "pg": "^8.7.3" 
+  }
+}

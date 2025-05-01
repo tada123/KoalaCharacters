@@ -1,0 +1,23 @@
+query {
+  characters {
+    id
+    name
+    gender
+    ability
+    weight
+    born
+    in_space_since
+    beer_consumption
+    knows_the_answer
+    nemesis {
+      id
+      is_alive
+      years
+      secret {
+        id
+        secret_code
+      }
+    }
+  }
+}
+

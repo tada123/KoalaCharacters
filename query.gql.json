@@ -1,0 +1,3 @@
+{
+  "query": "query {\n  characters {\n    id\n    name\n    gender\n    ability\n    weight\n    born\n    in_space_since\n    beer_consumption\n    knows_the_answer\n    nemeses {\n      id\n      is_alive\n      years\n      secret {\n        id\n        secret_code\n      }\n    }\n  }\n}"
+}

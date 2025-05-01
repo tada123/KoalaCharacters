@@ -1,0 +1,54 @@
+query {
+  characters {
+    ... CharFields
+    nemeses {
+      ... NemesisFields
+      character {
+        ... CharFields
+        nemeses {
+          ... NemesisFields
+        character {
+          ... CharFields
+          nemeses {
+            ... NemesisFields
+            character {
+              ... CharFields
+              nemeses {
+                ... NemesisFields
+              }
+            }
+          }
+        }
+        }
+      }
+    }
+  }
+}
+fragment CharFields on Character{
+    id
+    name
+    gender
+    ability
+    weight
+    born
+    in_space_since
+    beer_consumption
+    knows_the_answer
+    #nemeses {
+      #characters {
+        #... CharFields
+      #}
+    #}
+
+}
+fragment NemesisFields on Nemesis{
+    id
+    is_alive
+    character_id
+    years
+    secret {
+      id
+      secret_code
+    }
+}
+
